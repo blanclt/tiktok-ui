@@ -2,9 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: var(--default-layout-header-heght);
 }
 .container {
-    width: 1150px;
+    width: var(--default-layout-width);
+    padding: 0 var(--default-layout-horizontal-space);
     display: flex;
 }
 .content {
