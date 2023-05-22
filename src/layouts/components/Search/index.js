@@ -3,7 +3,7 @@ import { useEffect, useState, useRef } from 'react';
 import HeadlessTippy from '@tippyjs/react/headless';
 import AccountItem from '~/components/AccountItem';
 
-import * as searchService from '~/apiServices/searchService';
+import * as searchService from '~/services/searchService';
 
 import { faCircleXmark, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -53,7 +53,7 @@ function Search() {
         }
     };
     return (
-        <>
+        <div>
             <HeadlessTippy
                 interactive
                 visible={showResult && searchResult.length > 0}
@@ -91,7 +91,7 @@ function Search() {
                     </button>
                 </div>
             </HeadlessTippy>
-        </>
+        </div>
     );
 }
 
