@@ -60,8 +60,8 @@ function Menu({ children, items = [], hideOnClick = false, onChange = { defaultF
 }
 Menu.propTypes = {
     children: PropTypes.node.isRequired,
-items: PropTypes.array,
-hideOnClick: PropTypes.bool,
-onChange: PropTypes.func,
-}
+    items: PropTypes.array,
+    hideOnClick: PropTypes.bool,
+    onChange: PropTypes.func,
+};
 export default Menu;
